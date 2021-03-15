@@ -1,0 +1,181 @@
+/* -------------------------global css---------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/* -------------------------global css---------------------------- */
+
+/* -------------------------Header section ----------------------- */
+
+.header {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+.left-header {
+    float: left;
+}
+
+.logo {
+    width: 39px;
+    padding: 3px 0;
+}
+
+/* -------------------------Header section------------------------- */
+
+/* -------------------------Navbar--------------------------------- */
+
+.nav {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.items {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.nav-links {
+    margin-right: 80px;
+    color: rgb(8, 39, 139);
+}
+
+.nav-links:hover {
+    margin-right: 80px;
+    color: rgb(0, 52, 221);
+}
+
+/* ----------------------Navbar------------------------------------ */
+
+/* ----------------------Search Box-------------------------------- */
+
+.search-box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3px 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.search-box input {
+    height: 25px;
+    border: 0;
+    padding-left: 10px;
+}
+
+.bars {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* ----------------------Search Box------------------------------ */
+
+/* ----------------------Banner Section-------------------------- */
+
+.banner-img {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+}
+
+/* ----------------------Banner Section-------------------------- */
+
+/* ---------------------Content Section-------------------------- */
+
+.paragraph {
+    background-color: rgba(0, 255, 170, 0.219);
+    padding: 70px 0;
+    text-align: justify;
+    color: rgb(8, 116, 143);
+}
+
+.paragraph h1 {
+    padding: 15px 0;
+    color: rgb(8, 39, 139);
+    text-align: center;
+}
+
+/* ----------------------Content Section-------------------------- */
+
+/* ----------------------Footer Section--------------------------- */
+
+footer {
+    background-color: aquamarine;
+}
+
+.footer-content {
+    padding: 50px 0;
+    text-align: center;
+    color: rgb(8, 116, 143);
+}
+
+/* ----------------------Footer Section--------------------------- */
+
+/* Responsive for Laptop Version */
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 600px;
+    }
+    .nav-links {
+        margin-right: 20px;
+        color: rgb(8, 39, 139);
+        font-size: 15px;
+    }
+}
+
+/* Responsive for Mobile Version */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 350px;
+    }
+    .banner-img {
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 15px 0;
+        display: none;
+    }
+    .bars {
+        padding: 2px 7px;
+        position: relative;
+        bottom: 4px;
+        border-radius: 2px;
+        left: 5px;
+        outline-style: none;
+        border: 0;
+        display: inline;
+    }
+    .search-box {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 3px 10px;
+        position: relative;
+        bottom: 5px;
+        margin-right: 20px;
+    }
+}
